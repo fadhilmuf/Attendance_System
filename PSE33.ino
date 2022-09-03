@@ -18,13 +18,13 @@ MFRC522 rfid(SS_PIN, RST_PIN);
 
 MFRC522::MIFARE_Key key;
 
-char auth[] = "5ujUu4u2SRlQldW4q2z1NamydT-BEsG2"; //Auth code sent via Email
-const char *ssid = "AndroidAP";
-const char *pass = "12346789";
+char auth[] = " "; //Auth code sent via Email
+const char *ssid = " "; //wifi ssid
+const char *pass = " "; //wifi password
 
 void setup() {
   // put your setup code here, to run once:
-  Serial.begin(115200);
+  Serial.begin(115200); //upload speed
   mlx.begin();
   SPI.begin();
   Blynk.begin(auth, ssid, pass);
@@ -40,7 +40,7 @@ void setup() {
   while (WiFi.status() != WL_CONNECTED)
   {
     delay(500);
-    Serial.print(".");              // print … till not connected
+    Serial.print(".");
   }
   Serial.println("");
   Serial.println("WiFi connected");
