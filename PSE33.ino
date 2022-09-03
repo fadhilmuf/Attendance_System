@@ -92,7 +92,7 @@ void loop() {
     lcd.clear();
     lcd.print(0,0, "Adam");
     Blynk.virtualWrite(V2, mlx.readObjectTempC());
-    Blynk.email("adm.fadhilmuf@gmail.com", "Rekam Absensi", "Adam Naufal Hafizh Nasution, 18524081");
+    Blynk.email("adm.fadhilmuf@gmail.com", "Rekam Absensi", "B");
     digitalWrite(12, HIGH);
     delay (1000);
     digitalWrite(12, LOW);
@@ -101,7 +101,7 @@ void loop() {
     lcd.clear();
     lcd.print(0,0, "Riezky");
     Blynk.virtualWrite(V2, mlx.readObjectTempC());
-    Blynk.email("adm.fadhilmuf@gmail.com", "Rekam Absensi", "Muhammad Riezky Januar, 18524141");
+    Blynk.email("adm.fadhilmuf@gmail.com", "Rekam Absensi", "C");
     digitalWrite(12, HIGH);
     delay (1000);
     digitalWrite(12, LOW);
